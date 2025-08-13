@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome | Manoj Kumar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="splash">
+    <div class="splash-container">
+        <div class="image-wrapper">
+            <img src="manojkumar M A.jpg" alt="Manojkumar" class="splash-photo-rect">
+            <div class="overlay-text">
+                <h1 class="fade-in">Manojkumar M A </h1>
+                <p id="typing-text"></p>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script>
+    typeEffect(["AI & ML Engineering Student"], "typing-text", 100);
+
+    // Redirect after 10 seconds
+    setTimeout(() => {
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+            window.location.href = "portfolio.html";
+        }, 1000);
+    }, 10000);
+</script>
+</body>
+</html>
